@@ -1,0 +1,91 @@
+:root {
+    --pri-blue-200: hsl(193, 38%, 86%);
+    --pri-green-300: hsl(150, 100%, 66%);
+    --neu-blue-600: hsl(217, 19%, 38%);
+    --neu-blue-900: hsl(217, 19%, 24%);
+    --neu-blue-950: hsl(218, 23%, 16%);
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100dvw;
+    height: 100dvh;
+}
+
+body {
+    background-color: var(--neu-blue-950);
+}
+
+body, main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 275px;
+    height: min-content;
+    background-color: var(--neu-blue-900);
+    border-radius: 0.5rem;
+
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+}
+
+.idContainer {
+    color: var(--pri-green-300);
+    font-size: 0.625rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 1rem 0rem 0.5rem;
+}
+
+#adviceTextContainer {
+    color: var(--pri-blue-200);
+}
+
+h1 {
+    color: var(--pri-blue-200);
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0.5rem 0rem 1rem;
+    padding: 0.625rem;
+}
+
+.dividerImg {
+    content: url(./images/pattern-divider-mobile.svg);
+    width: 90%;
+    height: auto;
+    margin: 0.5rem 0rem;
+}
+
+.diceIconContainer {
+    padding: 0.75rem;
+    border-radius: 2rem;
+    background-color: var(--pri-green-300);
+    translate: 0% 50%;
+}
+
+.diceIcon {
+    content: url(./images/icon-dice.svg);
+    width: 15px;
+    height: 100%;
+}
+
+/* Generic Styles */
+/* Mobile styles from 320px - 425px */
+/* Tablet styles from 426px - 768px */
+/* Desktop styles larger than 769px */
+
+footer {
+    display: none;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
