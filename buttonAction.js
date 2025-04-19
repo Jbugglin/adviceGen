@@ -1,0 +1,3 @@
+function newAdvice() {
+    location.reload();
+}
