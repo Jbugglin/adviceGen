@@ -29,7 +29,7 @@ body, main {
 }
 
 main {
-    max-width: 300px;
+    width: 300px;
     height: min-content;
     background-color: var(--neu-blue-900);
     border-radius: 0.5rem;
@@ -87,13 +87,33 @@ button:hover {
     box-shadow: 0rem 0rem 2rem var(--pri-green-300);
 }
 
-/* Generic Styles */
-/* Mobile styles from 320px - 425px */
-/* Tablet styles from 426px - 768px */
-/* Desktop styles larger than 769px */
-
 footer {
     display: none;
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution {
+     font-size: 11px; text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width:769px) { 
+    main {
+        width: 550px;
+        height: max-content;
+        padding: 1rem;
+
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .diceIconContainer {
+        translate: 0px 35px;
+    }
+}
